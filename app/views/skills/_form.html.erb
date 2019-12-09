@@ -1,0 +1,17 @@
+<%= form_for @skill do |f| %>
+
+    <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
+  </div>
+
+    <div class="field">
+    <%= f.label :knowledge %><br />
+    <%= f.text_field :knowledge, autofocus: true, autocomplete: "knowledge" %>
+  </div>
+
+    <div class="actions">
+    <%= f.submit "Update" %>
+  </div>
+  
+<% end %>

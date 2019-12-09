@@ -1,0 +1,7 @@
+<% @projects.each do |project|%>
+<%= project.heading %>
+----->
+<%= project.discription %>
+<%= link_to 'Edit', edit_project_path(project)%>:
+<%= link_to 'Delete', project_path(project), method: :destroy%><br>
+<%end%>
